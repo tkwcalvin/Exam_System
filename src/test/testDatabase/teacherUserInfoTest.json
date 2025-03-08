@@ -1,0 +1,17 @@
+[ {
+  "username" : "teacher1",
+  "name" : "Teach2",
+  "gender" : "Male",
+  "age" : 30,
+  "position" : "Senior Lecturer",
+  "department" : "ENVR",
+  "password" : "teacher#1"
+}, {
+  "username" : "teacher2",
+  "name" : "teacher2",
+  "gender" : "Male",
+  "age" : 50,
+  "position" : "Professor",
+  "department" : "ECE",
+  "password" : "teacher#2"
+}]

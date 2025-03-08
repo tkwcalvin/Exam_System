@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comp3111.examsystem.controller.TeacherRegisterController">
+   <AnchorPane layoutY="390.0" prefHeight="605.0" prefWidth="500.0">
+      <TextField fx:id="usernameTxt" layoutX="198.0" layoutY="59.0" prefHeight="26.0" prefWidth="200.0" promptText="Please enter your username" />
+      <Text fontSmoothingType="LCD" layoutX="119.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username: " textAlignment="RIGHT" wrappingWidth="71.24667358398438">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nameTxt" layoutX="198.0" layoutY="109.0" prefHeight="26.0" prefWidth="200.0" promptText="Please enter your name" />
+      <Text fontSmoothingType="LCD" layoutX="116.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name: " textAlignment="RIGHT" wrappingWidth="74.51952453372394">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="113.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender:" textAlignment="RIGHT" wrappingWidth="71.62885045648056">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ageTxt" layoutX="199.0" layoutY="209.0" prefHeight="26.0" prefWidth="200.0" promptText="Please enter your age" />
+      <Text fontSmoothingType="LCD" layoutX="110.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age:" textAlignment="RIGHT" wrappingWidth="74.51952453372394">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="113.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position:" textAlignment="RIGHT" wrappingWidth="71.62885045648056">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="departmentTxt" layoutX="199.0" layoutY="306.0" prefHeight="26.0" prefWidth="200.0" promptText="Please enter your department" />
+      <Text fontSmoothingType="LCD" layoutX="71.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department:" textAlignment="RIGHT" wrappingWidth="114.05306716678058">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="109.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" textAlignment="RIGHT" wrappingWidth="74.51952453372394">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="59.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PasswordConfirm:" textAlignment="RIGHT" wrappingWidth="124.45662780520831">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Button fx:id="closeButton" layoutX="128.0" layoutY="519.0" mnemonicParsing="false" onAction="#closeButtonPressed" prefHeight="26.0" prefWidth="78.0" text="Close" />
+      <Button fx:id="registerButton" layoutX="298.0" layoutY="519.0" mnemonicParsing="false" onAction="#registerButtonPressed" prefHeight="26.0" prefWidth="75.0" text="Register" />
+      <MenuButton fx:id="gender" layoutX="199.0" layoutY="159.0" mnemonicParsing="false" onAction="#selectGender" prefWidth="195.0" text="Gender">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#selectGender" text="Male" />
+            <MenuItem mnemonicParsing="false" onAction="#selectGender" text="Female" />
+            <MenuItem mnemonicParsing="false" onAction="#selectGender" text="Others" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="position" layoutX="199.0" layoutY="259.0" mnemonicParsing="false" onAction="#selectPosition" prefWidth="195.0" text="Position">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Chair Professor" />
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Emeritus Principle" />
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Professor" />
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Associate professor" />
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Assistant professor" />
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Senior Lecturer" />
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Lecturer" />
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Research Assistant Lecturer" />
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Post-doctoral Fellow" />
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Adjunct Professor" />
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Honorary Professor" />
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Associate Professor" />
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Assistant Professor" />
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Professional Consultant" />
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Teaching Consultant" />
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Research Associate" />
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Research Assistant" />
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Postgraduate" />
+            <MenuItem mnemonicParsing="false" onAction="#selectPosition" text="Undergraduate" />
+         </items>
+      </MenuButton>
+      <CheckBox fx:id="showPasswordButton" layoutX="200.0" layoutY="390.0" mnemonicParsing="false" onAction="#showPassword" text="Show Password">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="showPasswordConfirmButton" layoutX="201.0" layoutY="464.0" mnemonicParsing="false" onAction="#showPasswordConfirm" text="Show Password">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="passwordTxtShow" layoutX="200.0" layoutY="360.0" prefHeight="26.0" prefWidth="200.0" promptText="Please enter your password" />
+      <TextField fx:id="passwordConfirmTxtShow" layoutX="200.0" layoutY="434.0" prefHeight="26.0" prefWidth="200.0" promptText="Please enter your password again" />
+      <PasswordField fx:id="passwordTxt" layoutX="200.0" layoutY="360.0" prefHeight="26.0" prefWidth="200.0" promptText="Please enter your password" />
+      <PasswordField fx:id="passwordConfirmTxt" layoutX="200.0" layoutY="434.0" prefHeight="26.0" prefWidth="200.0" promptText="Please enter your password again" />
+      <Text fx:id="usernameWarning" fill="RED" layoutX="200.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid character(s)">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Text fx:id="nameWarning" fill="RED" layoutX="200.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid character(s)">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Text fx:id="genderWarning" fill="RED" layoutX="199.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select gender">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Text fx:id="departmentWarning" fill="RED" layoutX="200.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your department">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Text fx:id="passwordConfirmWarning" fill="RED" layoutX="202.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your password again">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Text fx:id="ageWarning" fill="RED" layoutX="199.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid range">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Text fx:id="passwordWarning" fill="RED" layoutX="201.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password must be more than 8 characters and at least one special character(s) (.*[!@#$%^&amp;*].*) " wrappingWidth="213.66025641733137">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Text fx:id="positionWarning" fill="RED" layoutX="199.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please choose a position">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+   </AnchorPane>
+</VBox>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comp3111.examsystem.controller.StudentRegisterController">
+   <children>
+      <AnchorPane layoutY="390.0" prefHeight="605.0" prefWidth="500.0">
+         <children>
+            <TextField fx:id="usernameTxt" layoutX="197.0" layoutY="60.0" prefHeight="26.0" prefWidth="200.0" promptText="Please enter your username" />
+            <Text fontSmoothingType="LCD" layoutX="103.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username: " textAlignment="RIGHT" wrappingWidth="71.24667358398438">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nameTxt" layoutX="198.0" layoutY="110.0" prefHeight="26.0" prefWidth="200.0" promptText="Please enter your name" />
+            <Text fontSmoothingType="LCD" layoutX="100.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name: " textAlignment="RIGHT" wrappingWidth="74.51952453372394">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="101.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender:" textAlignment="RIGHT" wrappingWidth="71.62885045648056">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ageTxt" layoutX="200.0" layoutY="210.0" prefHeight="26.0" prefWidth="200.0" promptText="Please enter your age" />
+            <Text fontSmoothingType="LCD" layoutX="95.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age:" textAlignment="RIGHT" wrappingWidth="74.51952453372394">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="departmentTxt" layoutX="200.0" layoutY="260.0" prefHeight="26.0" prefWidth="200.0" promptText="Please enter your department" />
+            <Text fontSmoothingType="LCD" layoutX="58.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department:" textAlignment="RIGHT" wrappingWidth="114.05306716678058">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="98.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" textAlignment="RIGHT" wrappingWidth="74.51952453372394">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="51.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PasswordConfirm:" textAlignment="RIGHT" wrappingWidth="124.45662780520831">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="closeButton" layoutX="160.0" layoutY="474.0" mnemonicParsing="false" onAction="#closeButtonPressed" text="Close" />
+            <Button fx:id="registerButton" layoutX="288.0" layoutY="474.0" mnemonicParsing="false" onAction="#registerButtonPressed" text="Register" />
+            <MenuButton fx:id="gender" layoutX="200.0" layoutY="160.0" mnemonicParsing="false" onAction="#selectGender" prefWidth="195.0" text="Gender">
+              <items>
+                <MenuItem fx:id="male" mnemonicParsing="false" onAction="#selectGender" text="Male" />
+                <MenuItem fx:id="female" mnemonicParsing="false" onAction="#selectGender" text="Female" />
+                  <MenuItem fx:id="other" mnemonicParsing="false" onAction="#selectGender" text="Others" />
+              </items>
+            </MenuButton>
+            <CheckBox fx:id="showPasswordButton" layoutX="200.0" layoutY="340.0" mnemonicParsing="false" onAction="#showPassword" text="Show Password">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="showPasswordConfirmButton" layoutX="200.0" layoutY="400.0" mnemonicParsing="false" onAction="#showPasswordConfirm" text="Show Password">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </CheckBox>
+            <TextField fx:id="passwordTxtShow" layoutX="200.0" layoutY="310.0" prefHeight="26.0" prefWidth="200.0" promptText="Please enter your password" />
+            <TextField fx:id="passwordConfirmTxtShow" layoutX="200.0" layoutY="370.0" prefHeight="26.0" prefWidth="200.0" promptText="Please enter your password again" />
+            <PasswordField fx:id="passwordTxt" layoutX="200.0" layoutY="310.0" prefHeight="26.0" prefWidth="200.0" promptText="Please enter your password" />
+            <PasswordField fx:id="passwordConfirmTxt" layoutX="200.0" layoutY="370.0" prefHeight="26.0" prefWidth="200.0" promptText="Please enter your password again" />
+            <Text fx:id="usernameWarning" fill="RED" layoutX="200.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid character(s)">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+            <Text fx:id="nameWarning" fill="RED" layoutX="200.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid character(s)">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+            <Text fx:id="genderMissingWarning" fill="RED" layoutX="200.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select gender">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+            <Text fx:id="ageMissingWarning" fill="RED" layoutX="200.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your age">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+            <Text fx:id="departmentMissingWarning" fill="RED" layoutX="200.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your department">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+            <Text fx:id="passwordMissingWarning" fill="RED" layoutX="290.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your password">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Text>
+            <Text fx:id="passwordConfirmMissingWarning" fill="RED" layoutX="290.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your password again">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+            <Text fx:id="ageNotInRangeWarning" fill="RED" layoutX="200.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid range">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+            <Text fx:id="passwordNotSecureWarning" fill="RED" layoutX="282.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password must be more than 8 characters and at least one special character(s) (.*[!@#$%^&amp;*].*) " wrappingWidth="156.06021979623762">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+            <Text fx:id="passwordConfirmNotMatchWarning" fill="RED" layoutX="290.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password not match">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+            <Text fx:id="departmentInvalidCharWarning" fill="RED" layoutX="200.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid character(s)">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+            <Text fx:id="usernameExistWarning" fill="RED" layoutX="200.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usename exists">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,78 @@
+[ {
+  "username" : "marco",
+  "name" : "marco",
+  "age" : 12,
+  "gender" : "Male",
+  "department" : "CSE",
+  "password" : "marco!!!"
+}, {
+  "username" : "curtis",
+  "name" : "curtis",
+  "age" : 20,
+  "gender" : "Male",
+  "department" : "CSE",
+  "password" : "securepassword!"
+}, {
+  "username" : "calvin",
+  "name" : "calvin",
+  "age" : 10,
+  "gender" : "Male",
+  "department" : "DSE",
+  "password" : "1"
+}, {
+  "username" : "marcoLee",
+  "name" : "marco",
+  "age" : 22,
+  "gender" : "Male",
+  "department" : "ECE",
+  "password" : "password!"
+}, {
+  "username" : "Kenneth Leung",
+  "name" : "Kenneth Leung",
+  "age" : 40,
+  "gender" : "Male",
+  "department" : "CSE",
+  "password" : "kenneth!"
+}, {
+  "username" : "marcoTest",
+  "name" : "marco",
+  "age" : 10,
+  "gender" : "Male",
+  "department" : "CLS",
+  "password" : "password!"
+}, {
+  "username" : "student1",
+  "name" : "student1",
+  "age" : 20,
+  "gender" : "Male",
+  "department" : "CIVIL",
+  "password" : "123"
+}, {
+  "username" : "student2",
+  "name" : "student2",
+  "age" : 20,
+  "gender" : "Female",
+  "department" : "MATH",
+  "password" : "234"
+}, {
+  "username" : "student3",
+  "name" : "student3",
+  "age" : 20,
+  "gender" : "Male",
+  "department" : "PHYS",
+  "password" : "345"
+}, {
+  "username" : "student4",
+  "name" : "student4",
+  "age" : 20,
+  "gender" : "Female",
+  "department" : "CPEG",
+  "password" : "456"
+}, {
+  "username" : "test101",
+  "name" : "test",
+  "age" : 22,
+  "gender" : "Male",
+  "department" : "CS",
+  "password" : "password!"
+} ]

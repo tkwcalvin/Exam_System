@@ -1,0 +1,10 @@
+[ {
+  "courseID" : "COMP 3111",
+  "courseName" : "Software Engineering",
+  "department" : "CSE"
+}, {
+  "courseID" : "ELEC 2100",
+  "courseName" : "Signal System1",
+  "department" : "ECE"
+}
+]

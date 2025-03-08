@@ -1,0 +1,41 @@
+[ {
+  "courseID" : "COMP 3111",
+  "courseName" : "Software Engineering",
+  "department" : "CSE"
+}, {
+  "courseID" : "ELEC 2100",
+  "courseName" : "Signal System1",
+  "department" : "ECE"
+}, {
+  "courseID" : "MATH 1013",
+  "courseName" : "Calculus 1",
+  "department" : "MATH"
+}, {
+  "courseID" : "MATH 1014",
+  "courseName" : "Calculus 2",
+  "department" : "MATH"
+}, {
+  "courseID" : "LIFS 3030",
+  "courseName" : "Genetics and Mutation",
+  "department" : "LIFS"
+}, {
+  "courseID" : "MGMT 1010",
+  "courseName" : "Introduction to Maganement",
+  "department" : "SBM"
+}, {
+  "courseID" : "ENVR 1010",
+  "courseName" : "Appreciation of Environmental Protection",
+  "department" : "ENVR"
+}, {
+  "courseID" : "COMP 2012",
+  "courseName" : "C++",
+  "department" : "CSE"
+}, {
+  "courseID" : "COMP 2711",
+  "courseName" : "Discrete Math1",
+  "department" : "CSE"
+}, {
+  "courseID" : "COMP 3711",
+  "courseName" : "Algorithm",
+  "department" : "CSE"
+} ]

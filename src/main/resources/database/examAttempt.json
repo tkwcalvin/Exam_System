@@ -1,0 +1,141 @@
+[ {
+  "studentName" : "marcoDummy",
+  "examName" : "Midterm",
+  "examAttemptScore" : 9,
+  "examTotalScore" : 60,
+  "examAttemptTimeSpend" : 7200,
+  "courseName" : "COMP3111"
+}, {
+  "studentName" : "realmarco",
+  "examName" : "Comp3111 Midterm",
+  "examAttemptScore" : 22,
+  "examTotalScore" : 22,
+  "examAttemptTimeSpend" : 6,
+  "courseName" : "Comp3111"
+}, {
+  "studentName" : "marcoLee",
+  "examName" : "Comp2011 Quiz",
+  "examAttemptScore" : 0,
+  "examTotalScore" : 6,
+  "examAttemptTimeSpend" : 1,
+  "courseName" : "Comp2011"
+}, {
+  "studentName" : "marcoLee",
+  "examName" : "Comp3111 Midterm",
+  "examAttemptScore" : 22,
+  "examTotalScore" : 22,
+  "examAttemptTimeSpend" : 8,
+  "courseName" : "Comp3111"
+}, {
+  "studentName" : "realmarco",
+  "examName" : "Comp2011 Quiz",
+  "examAttemptScore" : 6,
+  "examTotalScore" : 6,
+  "examAttemptTimeSpend" : 9,
+  "courseName" : "Comp2011"
+}, {
+  "studentName" : "calvin",
+  "examName" : "Comp2011 Quiz",
+  "examAttemptScore" : 0,
+  "examTotalScore" : 6,
+  "examAttemptTimeSpend" : 2,
+  "courseName" : "Comp2011"
+}, {
+  "studentName" : "Kenneth Leung",
+  "examName" : "Comp2011 Quiz",
+  "examAttemptScore" : 3,
+  "examTotalScore" : 6,
+  "examAttemptTimeSpend" : 9,
+  "courseName" : "Comp2011"
+}, {
+  "studentName" : "Kenneth Leung",
+  "examName" : "Comp3111 Midterm",
+  "examAttemptScore" : 22,
+  "examTotalScore" : 22,
+  "examAttemptTimeSpend" : 7,
+  "courseName" : "Comp3111"
+}, {
+  "studentName" : "curtis",
+  "examName" : "Comp2011 Quiz",
+  "examAttemptScore" : 0,
+  "examTotalScore" : 6,
+  "examAttemptTimeSpend" : 60,
+  "courseName" : "Comp2011"
+}, {
+  "studentName" : "curtis",
+  "examName" : "Comp3111 Midterm",
+  "examAttemptScore" : 22,
+  "examTotalScore" : 22,
+  "examAttemptTimeSpend" : 6,
+  "courseName" : "Comp3111"
+}, {
+  "studentName" : "marcoTest",
+  "examName" : "Comp2011 Quiz",
+  "examAttemptScore" : 3,
+  "examTotalScore" : 6,
+  "examAttemptTimeSpend" : 9,
+  "courseName" : "Comp2011"
+}, {
+  "studentName" : "marcoTest",
+  "examName" : "Comp3111 Midterm",
+  "examAttemptScore" : 0,
+  "examTotalScore" : 22,
+  "examAttemptTimeSpend" : 12,
+  "courseName" : "Comp3111"
+}, {
+  "studentName" : "marcoTest",
+  "examName" : "Midterm",
+  "examAttemptScore" : 125,
+  "examTotalScore" : 270,
+  "examAttemptTimeSpend" : 30,
+  "courseName" : "COMP 1111"
+}, {
+  "studentName" : "marcoTest",
+  "examName" : "Final",
+  "examAttemptScore" : 49,
+  "examTotalScore" : 270,
+  "examAttemptTimeSpend" : 30,
+  "courseName" : "COMP 3111"
+}, {
+  "studentName" : "marcoTest",
+  "examName" : "Midterm2",
+  "examAttemptScore" : 22,
+  "examTotalScore" : 32,
+  "examAttemptTimeSpend" : 9,
+  "courseName" : "COMP 1111"
+}, {
+  "studentName" : "test",
+  "examName" : "Comp2011 Quiz",
+  "examAttemptScore" : 3,
+  "examTotalScore" : 6,
+  "examAttemptTimeSpend" : 5,
+  "courseName" : "Comp2011"
+}, {
+  "studentName" : "test",
+  "examName" : "Comp3111 Midterm",
+  "examAttemptScore" : 10,
+  "examTotalScore" : 22,
+  "examAttemptTimeSpend" : 7,
+  "courseName" : "Comp3111"
+}, {
+  "studentName" : "test",
+  "examName" : "Water Quiz",
+  "examAttemptScore" : 30,
+  "examTotalScore" : 55,
+  "examAttemptTimeSpend" : 13,
+  "courseName" : "WATR 2020"
+}, {
+  "studentName" : "curtis",
+  "examName" : "Math level Preliminary Test",
+  "examAttemptScore" : 40,
+  "examTotalScore" : 40,
+  "examAttemptTimeSpend" : 12,
+  "courseName" : "MATH 1013"
+}, {
+  "studentName" : "curtis",
+  "examName" : "Genetics In-class quiz",
+  "examAttemptScore" : 100,
+  "examTotalScore" : 100,
+  "examAttemptTimeSpend" : 20,
+  "courseName" : "LIFS 3030"
+} ]

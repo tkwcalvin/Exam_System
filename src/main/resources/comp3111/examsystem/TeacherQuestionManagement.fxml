@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="747.0" prefWidth="879.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comp3111.examsystem.controller.TeacherQuestionManagementController">
+   <left>
+      <VBox prefHeight="365.0" prefWidth="240.0" BorderPane.alignment="CENTER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="20.0" right="20.0" top="10.0" />
+         </padding>
+         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="186.0" text="Question Editor">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+            <VBox.margin>
+               <Insets bottom="20.0" />
+            </VBox.margin>
+         </Label>
+         <Label text="Question:">
+            <VBox.margin>
+               <Insets bottom="2.0" />
+            </VBox.margin>
+         </Label>
+         <TextField fx:id="questionField">
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+         </TextField>
+         <Label fx:id="questionWarning" layoutX="30.0" layoutY="155.0" text="Label" textFill="RED" visible="false">
+            <font>
+               <Font size="10.0" />
+            </font>
+            <VBox.margin>
+               <Insets top="2.0" />
+            </VBox.margin>
+         </Label>
+         <HBox prefHeight="0.0" prefWidth="200.0">
+            <VBox.margin>
+               <Insets top="4.0" />
+            </VBox.margin>
+            <Label contentDisplay="RIGHT" prefHeight="24.0" prefWidth="42.0" text="Type:  " />
+            <ChoiceBox fx:id="typeField" onAction="#refreshAnswerField" prefHeight="26.0" prefWidth="83.0" />
+         </HBox>
+         <Label fx:id="typeWarning" text="Label" textFill="RED" visible="false">
+            <VBox.margin>
+               <Insets left="40.0" />
+            </VBox.margin>
+            <font>
+               <Font size="10.0" />
+            </font>
+         </Label>
+         <Label layoutX="10.0" layoutY="292.0" text="Option A:">
+            <VBox.margin>
+               <Insets bottom="2.0" top="6.0" />
+            </VBox.margin>
+         </Label>
+         <TextField fx:id="optionAField" layoutX="10.0" layoutY="320.0">
+            <VBox.margin>
+               <Insets bottom="4.0" />
+            </VBox.margin>
+         </TextField>
+         <Label layoutX="10.0" layoutY="355.0" text="Option B:">
+            <VBox.margin>
+               <Insets bottom="2.0" />
+            </VBox.margin>
+         </Label>
+         <TextField fx:id="optionBField" layoutX="10.0" layoutY="372.0">
+            <VBox.margin>
+               <Insets bottom="4.0" />
+            </VBox.margin>
+         </TextField>
+         <Label layoutX="10.0" layoutY="376.0" text="Option C:">
+            <VBox.margin>
+               <Insets bottom="2.0" />
+            </VBox.margin>
+         </Label>
+         <TextField fx:id="optionCField" layoutX="10.0" layoutY="394.0">
+            <VBox.margin>
+               <Insets bottom="4.0" />
+            </VBox.margin>
+         </TextField>
+         <Label layoutX="10.0" layoutY="398.0" text="Option D:">
+            <VBox.margin>
+               <Insets bottom="2.0" />
+            </VBox.margin>
+         </Label>
+         <TextField fx:id="optionDField" layoutX="10.0" layoutY="416.0">
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+         </TextField>
+         <Label fx:id="optionWarning" layoutX="30.0" layoutY="115.0" text="Label" textFill="RED" visible="false">
+            <font>
+               <Font size="10.0" />
+            </font>
+            <VBox.margin>
+               <Insets top="2.0" />
+            </VBox.margin>
+         </Label>
+         <Label layoutX="10.0" layoutY="450.0" text="Answer:">
+            <VBox.margin>
+               <Insets bottom="2.0" left="4.0" right="4.0" top="4.0" />
+            </VBox.margin>
+         </Label>
+         <GridPane prefHeight="49.0" prefWidth="200.0">
+            <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+            <RadioButton fx:id="checkboxA" mnemonicParsing="false" text="A" />
+            <RadioButton fx:id="checkboxB" mnemonicParsing="false" text="B" GridPane.columnIndex="1" />
+            <RadioButton fx:id="checkboxC" mnemonicParsing="false" text="C" GridPane.rowIndex="1" />
+            <RadioButton fx:id="checkboxD" mnemonicParsing="false" text="D" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </GridPane>
+         <Label fx:id="answerWarning" text="Label" textFill="RED" visible="false">
+            <font>
+               <Font size="10.0" />
+            </font>
+            <VBox.margin>
+               <Insets top="-2.0" />
+            </VBox.margin>
+         </Label>
+         <Label layoutX="10.0" layoutY="465.0" text="Score">
+            <VBox.margin>
+               <Insets bottom="2.0" top="6.0" />
+            </VBox.margin>
+         </Label>
+         <TextField fx:id="scoreField" layoutX="10.0" layoutY="493.0" promptText="number">
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+         </TextField>
+         <Label fx:id="scoreWarning" layoutX="30.0" layoutY="391.0" text="Label" textFill="RED" visible="false">
+            <font>
+               <Font size="10.0" />
+            </font>
+            <VBox.margin>
+               <Insets top="2.0" />
+            </VBox.margin>
+         </Label>
+         <HBox prefHeight="32.0" prefWidth="200.0">
+            <Button fx:id="addBtn" mnemonicParsing="false" onAction="#postQuestion" prefHeight="40.0" prefWidth="62.0" text="Add">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="UpdateBtn" mnemonicParsing="false" onAction="#putQuestion" prefHeight="42.0" prefWidth="62.0" text="Update">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="DeleteBtn" mnemonicParsing="false" onAction="#deleteQuestion" prefHeight="50.0" prefWidth="62.0" text="Delete">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Button>
+            <VBox.margin>
+               <Insets top="12.0" />
+            </VBox.margin>
+         </HBox>
+         <FlowPane alignment="BOTTOM_CENTER" prefHeight="94.0" prefWidth="200.0">
+            <Button fx:id="clearBtn" layoutX="48.0" layoutY="37.0" mnemonicParsing="false" onAction="#clear" prefHeight="32.0" prefWidth="125.0" text="Clear">
+               <FlowPane.margin>
+                  <Insets bottom="7.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button fx:id="refreshBtn" mnemonicParsing="false" onAction="#refresh" prefHeight="32.0" prefWidth="125.0" text="Refresh">
+               <FlowPane.margin>
+                  <Insets />
+               </FlowPane.margin>
+            </Button>
+         </FlowPane>
+      </VBox>
+   </left>
+   <top>
+      <HBox alignment="CENTER" prefHeight="52.0" prefWidth="875.0" BorderPane.alignment="CENTER">
+         <Label text="Question:">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </Label>
+         <TextField fx:id="questionFilter" prefWidth="250.0">
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin>
+         </TextField>
+         <Label text="Type:">
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin>
+         </Label>
+         <ChoiceBox fx:id="typeFilter" prefWidth="60.0">
+            <HBox.margin>
+               <Insets left="5.0" />
+            </HBox.margin>
+         </ChoiceBox>
+         <Label text="Score:">
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin>
+         </Label>
+         <ChoiceBox fx:id="scoreFilter" prefWidth="100.0">
+            <HBox.margin>
+               <Insets left="5.0" />
+            </HBox.margin>
+         </ChoiceBox>
+         <Button fx:id="resetBtn" mnemonicParsing="false" onAction="#reset" text="Reset">
+            <HBox.margin>
+               <Insets left="70.0" />
+            </HBox.margin>
+         </Button>
+         <Button fx:id="filterBtn" mnemonicParsing="false" onAction="#query" text="Filter">
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin>
+         </Button>
+      </HBox>
+   </top>
+   <center>
+      <Pane prefHeight="577.0" prefWidth="646.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+         <TableView fx:id="questionTable" prefHeight="668.0" prefWidth="616.0">
+            <columns>
+               <TableColumn fx:id="questionCol" prefWidth="100.0" text="Question" />
+               <TableColumn fx:id="typeCol" prefWidth="77.0" text="Type" />
+               <TableColumn fx:id="optionACol" prefWidth="70.0" text="Option A" />
+               <TableColumn fx:id="optionBCol" prefWidth="70.0" text=" Option B" />
+               <TableColumn fx:id="optionCCol" prefWidth="70.0" text="Option C" />
+               <TableColumn fx:id="optionDCol" prefWidth="70.0" text="Option D" />
+               <TableColumn fx:id="answerCol" prefWidth="77.0" text="Answer" />
+               <TableColumn fx:id="scoreCol" prefWidth="77.0" text="Score" />
+            </columns>
+         </TableView>
+      </Pane>
+   </center>
+</BorderPane>
