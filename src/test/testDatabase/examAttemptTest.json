@@ -1,0 +1,22 @@
+[ {
+  "studentName" : "curtis",
+  "examName" : "Genetics In-class quiz",
+  "examAttemptScore" : 100,
+  "examTotalScore" : 100,
+  "examAttemptTimeSpend" : 20,
+  "courseName" : "LIFS 3030"
+}, {
+  "studentName" : "dummy",
+  "examName" : "Dummy Exam",
+  "examAttemptScore" : 40,
+  "examTotalScore" : 100,
+  "examAttemptTimeSpend" : 10,
+  "courseName" : "COMP 3111"
+}, {
+  "studentName" : "dummy",
+  "examName" : "Dummy Exam II",
+  "examAttemptScore" : 0,
+  "examTotalScore" : 100,
+  "examAttemptTimeSpend" : 40,
+  "courseName" : "COMP 4111"
+} ]

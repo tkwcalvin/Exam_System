@@ -1,0 +1,57 @@
+[ {
+  "examName" : "Water Quiz",
+  "timeLimit" : 20,
+  "course" : "ENVR 1010",
+  "published" : true,
+  "examQuestions": [
+    {
+      "questionName": "1+1=",
+      "questionType": "Single",
+      "optionA": "0",
+      "optionB": "1",
+      "optionC": "2",
+      "optionD": "3",
+      "answer": [
+        "C"
+      ],
+      "score": 10
+    },
+    {
+      "questionName" : "Test Update Question",
+      "questionType" : "Multiple",
+      "optionA" : "Option A1",
+      "optionB" : "Option B1",
+      "optionC" : "Option C1",
+      "optionD" : "Option D1",
+      "answer" : [ "A", "B" ],
+      "score" : 50
+    },
+    {
+      "questionName": "1+1=",
+      "questionType": "Single",
+      "optionA": "0",
+      "optionB": "1",
+      "optionC": "2",
+      "optionD": "3",
+      "answer": [
+        "C"
+      ],
+      "score": 10
+    }
+  ],
+  "fullScore" : 10
+}, {
+  "examName" : "Test Exam Updating",
+  "timeLimit" : 1000,
+  "course" : "ELEC 2100",
+  "published" : false,
+  "examQuestions" : [ ],
+  "fullScore" : 0
+}, {
+  "examName" : "Test Exam Updating",
+  "timeLimit" : 1000,
+  "course" : "ELEC 2100",
+  "published" : false,
+  "examQuestions" : [ ],
+  "fullScore" : 0
+} ]

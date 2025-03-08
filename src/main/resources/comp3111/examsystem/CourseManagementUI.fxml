@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="671.0" prefWidth="1106.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="comp3111.examsystem.controller.CourseManagementController">
+    <TableView fx:id="courseTable" layoutY="67.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="919.0">
+        <columns>
+            <TableColumn fx:id="courseIDColumn" prefWidth="315.20002442598343" text="Course ID" />
+            <TableColumn fx:id="courseNameColumn" prefWidth="320.0" text="Course Name" />
+            <TableColumn fx:id="departmentColumn" prefWidth="285.5999755859375" text="Department" />
+        </columns>
+    </TableView>
+    <Button fx:id="buttonFilter" layoutX="774.0" layoutY="24.0" mnemonicParsing="false" onAction="#buttonFilterPressed" text="Filter" />
+    <Button fx:id="buttonReset" layoutX="843.0" layoutY="24.0" mnemonicParsing="false" onAction="#buttonResetPressed" text="Reset" />
+    <TextField fx:id="courseIDFilter" layoutX="110.0" layoutY="24.0" />
+    <TextField fx:id="courseNameFilter" layoutX="352.0" layoutY="24.0" />
+    <TextField fx:id="departmentFilter" layoutX="597.0" layoutY="24.0" />
+    <Label layoutX="52.0" layoutY="28.0" text="Course ID:" />
+    <Label layoutX="273.0" layoutY="28.0" text="Course Name: " />
+    <Label layoutX="527.0" layoutY="28.0" text="Department: " />
+    <TextField fx:id="courseIDField" layoutX="937.0" layoutY="112.0" />
+    <TextField fx:id="courseNameField" layoutX="937.0" layoutY="188.0" />
+    <TextField fx:id="departmentField" layoutX="936.0" layoutY="261.0" />
+    <Label layoutX="1105.0" layoutY="85.0" />
+    <Label layoutX="937.0" layoutY="94.0" text="Course ID:" />
+    <Label layoutX="939.0" layoutY="170.0" text="Course Name: " />
+    <Label layoutX="936.0" layoutY="243.0" text="Department: " />
+    <Button fx:id="buttonAdd" layoutX="945.0" layoutY="616.0" mnemonicParsing="false" onAction="#buttonAddPressed" text="Add" />
+    <Button fx:id="buttonUpdate" layoutX="1004.0" layoutY="616.0" mnemonicParsing="false" onAction="#buttonUpdatePressed" text="Update" />
+    <Button fx:id="buttonRefresh" layoutX="861.0" layoutY="616.0" mnemonicParsing="false" onAction="#buttonRefreshPressed" text="Refresh" />
+    <Button fx:id="buttonDelete" layoutX="781.0" layoutY="616.0" mnemonicParsing="false" onAction="#buttonDeletePressed" text="Delete" />
+   <Label fx:id="fillID" layoutX="937.0" layoutY="138.0" prefHeight="18.0" prefWidth="150.0" text="Please enter valid course ID" textFill="RED" />
+   <Label fx:id="fillName" layoutX="937.0" layoutY="214.0" prefHeight="18.0" prefWidth="164.0" text="Please enter valid course name" textFill="RED" />
+   <Label fx:id="fillDepartment" layoutX="935.0" layoutY="287.0" prefHeight="18.0" prefWidth="170.0" text="Please enter valid department" textFill="RED" />
+</AnchorPane>

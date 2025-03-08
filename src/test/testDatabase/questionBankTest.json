@@ -1,0 +1,37 @@
+[ {
+  "questionName" : "How to spell java?",
+  "questionType" : "Multiple",
+  "optionA" : "j",
+  "optionB" : "ja",
+  "optionC" : "jav",
+  "optionD" : "java",
+  "answer" : [ "A" ],
+  "score" : 10
+}, {
+  "questionName" : "How to spell java?",
+  "questionType" : "Single",
+  "optionA" : "j",
+  "optionB" : "ja",
+  "optionC" : "jav",
+  "optionD" : "java",
+  "answer" : [ "A" ],
+  "score" : 10
+},{
+  "questionName" : "How to spell java?",
+  "questionType" : "Multiple",
+  "optionA" : "not java",
+  "optionB" : "ja",
+  "optionC" : "jav",
+  "optionD" : "java",
+  "answer" : [ "A" ],
+  "score" : 10
+},{
+  "questionName" : "How to spell java?",
+  "questionType" : "Multiple",
+  "optionA" : "j",
+  "optionB" : "ja",
+  "optionC" : "jav",
+  "optionD" : "java",
+  "answer" : [ "A" ],
+  "score" : 20
+}]

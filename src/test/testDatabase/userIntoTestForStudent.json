@@ -1,0 +1,8 @@
+[ {
+  "username" : "alreadyExist",
+  "name" : "alreadyExist",
+  "age" : 12,
+  "gender" : "Male",
+  "department" : "CS",
+  "password" : "password!"
+} ]

@@ -1,0 +1,118 @@
+[ {
+  "questionName" : "How to spell java?",
+  "questionType" : "Single",
+  "optionA" : "j",
+  "optionB" : "ja",
+  "optionC" : "jav",
+  "optionD" : "java",
+  "answer" : [ "A" ],
+  "score" : 10
+}, {
+  "questionName" : "How many cups of water do human drinks every day?",
+  "questionType" : "Single",
+  "optionA" : "5",
+  "optionB" : "6",
+  "optionC" : "7",
+  "optionD" : "8",
+  "answer" : [ "D" ],
+  "score" : 5
+}, {
+  "questionName" : "How much drinking fountains are there in HKUST?",
+  "questionType" : "Single",
+  "optionA" : "118",
+  "optionB" : "76",
+  "optionC" : "94",
+  "optionD" : "I don't know :(",
+  "answer" : [ "D" ],
+  "score" : 30
+}, {
+  "questionName" : "Why water resources are limited while there are 70% water coverage on earth?",
+  "questionType" : "Multiple",
+  "optionA" : "Most water resources are not reachable",
+  "optionB" : "Ocean water are not drinkable",
+  "optionC" : "Water resources are often polluted",
+  "optionD" : "Water resources are owned by financial giants",
+  "answer" : [ "B", "C" ],
+  "score" : 20
+}, {
+  "questionName" : "mRNA is created in a cell during which process?",
+  "questionType" : "Single",
+  "optionA" : "Transcription",
+  "optionB" : "Transition",
+  "optionC" : "Translation",
+  "optionD" : "Transposition",
+  "answer" : [ "C" ],
+  "score" : 25
+}, {
+  "questionName" : "What does natural selection affects?",
+  "questionType" : "Multiple",
+  "optionA" : "Adaptive Radiation",
+  "optionB" : "Generic Shift",
+  "optionC" : "Character Displacement",
+  "optionD" : "Speciation",
+  "answer" : [ "A", "C", "D" ],
+  "score" : 25
+}, {
+  "questionName" : "Which choice below isn't involved during cellular differentiation? ",
+  "questionType" : "Single",
+  "optionA" : "Cell Stimulates",
+  "optionB" : "Deoxyribo Nulcleic Acid",
+  "optionC" : "Stem Cells",
+  "optionD" : "Gene Regulators",
+  "answer" : [ "A" ],
+  "score" : 50
+}, {
+  "questionName" : "How are human different from chimpanzee?",
+  "questionType" : "Single",
+  "optionA" : "Chimpanzees are reptiles",
+  "optionB" : "Chimpanzees have longer small intestines",
+  "optionC" : "Chimpanzees are carnivores",
+  "optionD" : "Chimpanzees are nocturnal",
+  "answer" : [ "B" ],
+  "score" : 0
+}, {
+  "questionName" : "1+1=",
+  "questionType" : "Single",
+  "optionA" : "0",
+  "optionB" : "1",
+  "optionC" : "2",
+  "optionD" : "3",
+  "answer" : [ "C" ],
+  "score" : 10
+}, {
+  "questionName" : "1-1=",
+  "questionType" : "Single",
+  "optionA" : "0",
+  "optionB" : "1",
+  "optionC" : "2",
+  "optionD" : "3",
+  "answer" : [ "A" ],
+  "score" : 10
+}, {
+  "questionName" : "1*1=",
+  "questionType" : "Single",
+  "optionA" : "0",
+  "optionB" : "1",
+  "optionC" : "2",
+  "optionD" : "3",
+  "answer" : [ "B" ],
+  "score" : 10
+}, {
+  "questionName" : "1/1=",
+  "questionType" : "Single",
+  "optionA" : "0",
+  "optionB" : "1",
+  "optionC" : "2",
+  "optionD" : "3",
+  "answer" : [ "B" ],
+  "score" : 10
+}, {
+  "questionName" : "Is this test difficult?",
+  "questionType" : "Single",
+  "optionA" : "Easy!",
+  "optionB" : "Not too difficult",
+  "optionC" : "Quite challenging",
+  "optionD" : "Can I even pass...",
+  "answer" : [ "A" ],
+  "score" : 0
+} ]
