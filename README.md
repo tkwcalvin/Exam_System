@@ -1,4 +1,4 @@
-# Examination System for HKUST
+# Examination System 
 <h3>Group 20 Team Members:</h3>
 Lee Pak Nin    	      pnleeab@connect.ust.hk : Task #1 (Github: PakNinnnn, branch id task1)<br/>
 Lau Kin Lun (leader)  kllauar@connect.ust.hk : Task #2 (Github: greentis, branch id task2)<br/>
